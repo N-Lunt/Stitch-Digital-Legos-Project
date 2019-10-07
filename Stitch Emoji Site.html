@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+ </style> 
+ 
+ <link rel="stylesheet" href="wickedcss.min.css">
+ 
+<style>
+    #guitar {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+
+
+
+
+  <title> STITCH </title>
+  
+    </head>
+
+
+
+<body>
+<style>
+    body{ background-image: url('tropical-palm-leaf-pink-background_46208-267.jpg');
+        background-repeat:no-repeat;
+       background-size:cover;} 
+</style>
+
+
+
+
+
+
+<div class="pulse"><img src="stitch butt wiggle.png"></div>
+
+
+
+
+
+
+
+
+
+<div class="wiggle"><img src="stitch cry.png" id="cry"></div>
+
+  
+
+
+
+
+
+
+
+<div class="pulse"><img id= "guitar" src="stitch guitar.png" > </div>
+  <script>
+    guitar.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        guitar.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 11000) clearInterval(timer);
+
+      }, 20);
+    }
+    
+  </script>
+
+
+
+
+
+
+
+
+<div id=stitch></div>
+
+<p id="bold"><img src="stitch bold.png"></p>
+
+<button type="button" onclick="myFunction()"> CLICK THIS!</button>
+
+<script>
+function myFunction() {
+  document.getElementById("bold").innerHTML = "POOF";
+}
+</script>
+
+
+
+
+</body>
+
+
+</html>
